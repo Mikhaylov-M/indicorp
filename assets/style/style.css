@@ -104,6 +104,9 @@ h6 {
     color: var(--second-text);
     margin-right: 21px;
 }
+.navbar__burger {
+    display: none;
+}
 .header__title {
     max-width: 509px;
     font-weight: 800;
@@ -254,6 +257,8 @@ h6 {
     color: var(--text);
 }
 .card__image img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -325,9 +330,6 @@ h6 {
     display: flex;
     column-gap: 20px;
     margin-bottom: 52px;
-}
-.content__item svg {
-
 }
 .content__item h5 {
     margin-bottom: 5px;
