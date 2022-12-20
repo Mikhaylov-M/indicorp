@@ -38,7 +38,7 @@
     }
     .contact__cards {
         grid-template-columns: 1fr;
-        row-gap: 20px;
+        row-gap: 30px;
         align-items: center;
     }
     .contact__card {
@@ -115,7 +115,11 @@
         grid-template-columns: 1fr;
         row-gap: 20px;
     }
-    .clients__subscribe {
+    .clients__logo {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+    .subscribe__content {
         row-gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
@@ -156,7 +160,7 @@
     .header__cards {
         row-gap: 30px;
     }
-    .clients__email {
+    .subscribe__email {
         width: 400px;
     }
     .footer__contact .container {
@@ -172,8 +176,75 @@
     .container {
         max-width: 480px;
     }
-    .clients__email {
+    .subscribe__email {
         width: 350px;
+    }
+    .clients__logo {
+        padding: 0 100px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        max-width: 370px;
+    }
+    .header .container {
+        text-align: center;
+    }
+    .header form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header__btn-primary {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .header__btn-second {
+        margin-bottom: 80px;
+    }
+    .header__card {
+        text-align: start;
+    }
+    .features .container {
+        grid-template-columns: 1fr;
+    }
+    .features__title {
+        grid-column: 1 / 1;
+    }
+    .present .container {
+        grid-template-columns: 1fr;
+    }
+    .clients__logo {
+        padding: 0 80px;
+    }
+    .subscribe {
+        padding: 0;
+    }
+    .subscribe .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .footer__main .container {
+        grid-template-columns: 1fr;
+    }
+    .footer__copyright .container {
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer__copyright .container h6 {
+        margin-bottom: 50px;
+    }
+    .footer__social a:first-child {
+        margin-left: 0;
+    }
+}
+@media (max-width: 390px) {
+    .container {
+        max-width: 340px;
+    }
+    .subscribe__email {
+        width: 320px;
     }
 }
 
